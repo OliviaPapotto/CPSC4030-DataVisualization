@@ -1,0 +1,22 @@
+<head><h1>Milestone 5 Project</h1></head>
+<head>David Cherne, Olivia Papotto</head>  
+
+<body> 
+
+    <div class="themap">Graph 1 - Total Number of Streams on October 11th, 2020</div>
+    <div class="themap2">Graph 2 - Most Popular Genre on October 11th, 2020</div>
+    <div class="viewof-r">Graph 3 - Top Genre Popularity in North and South America</div>
+    <div class="themap3"></div>
+    <p>Credit: <a href="https://observablehq.com/@oliviapapotto/milestone-4-map">Milestone 4 Map by Olivia Papotto</a></p>
+
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@oliviapapotto/milestone-4-map.js?v=3";
+    (new Runtime).module(define, name => {
+    if (name === "themap") return Inspector.into(".themap")();
+    if (name === "themap2") return Inspector.into(".themap2")();
+    if (name === "viewof r") return Inspector.into(".viewof-r")();
+    if (name === "themap3") return Inspector.into(".themap3")();
+    });
+    </script>
+</body>
