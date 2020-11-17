@@ -1,22 +1,51 @@
-<head><h1>Milestone 5 Project</h1></head>
-<head>David Cherne, Olivia Papotto</head>  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Milestone 4 Project</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<h1>Milestone 4 Project - Visualizing Spotify Data in North and South America</h1>
+<h2>CPSC 4030 - David Cherne & Olivia Papotto</h2>  
 
-<body> 
+<body>
 
-    <div class="themap">Graph 1 - Total Number of Streams on October 11th, 2020</div>
-    <div class="themap2">Graph 2 - Most Popular Genre on October 11th, 2020</div>
-    <div class="viewof-r">Graph 3 - Top Genre Popularity in North and South America</div>
-    <div class="themap3"></div>
-    <p>Credit: <a href="https://observablehq.com/@oliviapapotto/milestone-4-map">Milestone 4 Map by Olivia Papotto</a></p>
+    <p>Our Milestone 4 Project consists of gathering data from Spotify's API
+        and finding trends within the number of streams on October 11th, 2020 
+        and the different kinds of genres listened to within North and South America.
+        The data was gathered from www.spotifycharts.com, a Spotify website that shows the 
+        Top 200 Songs, filtered by location (globally or within a specific country), 
+        time frame (daily or weekly), and the date (ranging from present day to 01/01/17).
+    </p>
 
-    <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@oliviapapotto/milestone-4-map.js?v=3";
-    (new Runtime).module(define, name => {
-    if (name === "themap") return Inspector.into(".themap")();
-    if (name === "themap2") return Inspector.into(".themap2")();
-    if (name === "viewof r") return Inspector.into(".viewof-r")();
-    if (name === "themap3") return Inspector.into(".themap3")();
-    });
-    </script>
+    <p>After first discovering the data on the Spotify Charts website, we
+        became curious as to how different genres trend across the Americas and overall wondered
+        how different countries listen to music. This resulted in the creation of three separate graphs.
+        Graph 1 explores how many streams of the Top 200 songs North and South America had on 10/11/20. 
+        Graph 2 looks at the genre that is overall most popular on 10/11/20. Lastly, Graph 3 looks at the
+        popularity of the Top 5 Genres in the Americas (Latin, Pop, Rap, Hip-Hop, and Carioca). This was
+        computed by _.  
+    </p>
+
+    <p>To see each of the different graphs, simply select the desired genre from the list. 
+        Next, simply hover over the different countries to see their name and the number of streams or 
+        the genre that is most prevelant for the graph. For Graph 3, first select a genre then </p>
+
+    <h2>Graph 1 - Number of Streams on 10/11/20 in North and South America</h2>
+
+    <iframe width="100%" height="1400" frameborder="0"
+  src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=themap"></iframe>
+  
+    <h2>Graph 2 - Most Popular Genre on 10/11/20 in North and South America</h2>
+
+    <iframe width="100%" height="1400" frameborder="0"
+    src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=themap2"></iframe>
+
+    <h2>Graph 3 - Popularity of the Top 5 Genres on 10/11/20 in North and South America</h2>
+
+    <iframe width="100%" height="1450" frameborder="0"
+  src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=viewof+r&cell=themap3"></iframe>
+
+
+
 </body>
+</html>
