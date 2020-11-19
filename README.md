@@ -1,4 +1,5 @@
 # CPSC 4030 - Milestone 4
+David Cherne & Olivia Papotto
 
 To access our site, visit https://oliviapapotto.github.io/DataVisF20/
 
