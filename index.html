@@ -10,28 +10,39 @@
 
 <body>
 
-    <p>Our Milestone 4 Project consists of gathering data from Spotify's API
-        and finding trends within the number of streams on October 11th, 2020 
-        and the different kinds of genres listened to within North and South America.
-        The data was gathered from www.spotifycharts.com, a Spotify website that shows the 
-        Top 200 Songs, filtered by location (globally or within a specific country), 
+    <p>Our Milestone 4 Project consists of gathering data from www.spotifycharts.com, a
+        website created by Spotify that shows the 
+        Top 200 Songs filtered by location (globally or within a specific country), 
         time frame (daily or weekly), and the date (ranging from present day to 01/01/17).
-    </p>
-    <p>The data gathered from the website did not originally include the genre for each song, so we
-        had to code our own program (using Spotify's API) that would search the artist of the song, and take
-        the artists' genre instead. The trade-off of not having to manually enter the genre of approximately 3,800 songs
-        is that there might be a discrepancy between the genre of a song and the genre of the artist of that song. However,
-        the genre of the artist is declared by themself, so we felt like this was a compromise we were willing to make.
-       
     </p>
     <p>After first discovering the data on the Spotify Charts website, we
         became curious as to how different genres trend across the Americas and overall wondered
-        how different countries listen to music. This resulted in the creation of three separate graphs.
+        how different countries listen to music. This resulted in the creation of three separate graphs shown below.
         Graph 1 explores how many songs were streamed in North and South America, based off of the top 200 songs for 10/11/20.
         Graph 2 looks at the genre that was overall most popular on 10/11/20. Lastly, Graph 3 looks at the
         popularity of the Top 5 Genres in the Americas (Latin, Pop, Rap, Hip-Hop, and Carioca) for each country. This was
         computed by taking the amount of streams for one genre, divided by the total streams in North and South America for that same genre.  
     </p>
+    <p>The data gathered from the website did not originally include the genre for each song, so we
+        had to code our own program in python that would utilize Spotify's API to search the artist of the song, and take
+        the artists' genre instead. The trade-off of not having to manually enter the genre of approximately 3,800 songs
+        is that there might be a discrepancy between the genre of a song and the genre of the artist of that song. However,
+        the genre of the artist is declared by themself, so we felt like this was a compromise we were willing to make for the
+        sake of the visualization.     
+    </p>
+    <p>The gathering of the data itself also took time; while you are able to quickly download the data from each page individually,
+        switching from page-to-page for an entire year would become tedious: gathering data from 19 countries with 365 days in a year would
+        mean we would need to sift through about 6,395 files of data! On top of this, the program written to find the genre of each song and record
+        it took about a minute per file. Assuming there were no crashes or malfunctions, this would mean we would need to let the program run for 116 hours
+        straight before every song -- which would be a total of 1,387,000 songs at this point -- would have their genre recorded.
+    </p>
+    <p>This was not to mention that some artists did not have a declared genre, to which Spotify would automatically list it as "None", or
+        that most artists had an extremely specific genre, such as "South Carolina Hip Hop". To combat this, we still had to find ways to
+        sift through every song individually and change their genre to be as broad as possible (for the above example, the song's genre would be
+        changed to "Hip-Hop" instead.) As you can see, doing this for information for an entire year would take significantly longer and take up
+        significantly more space, so we settled for gathering the data for one day instead.
+    </p>
+    
 
     <p>To see each of the different graphs, simply scroll through the page to see each of the three graphs. 
        You can hover over the countries to see their name, as well as specifics for the data that is relevant to that graph.
