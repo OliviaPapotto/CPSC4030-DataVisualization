@@ -53,33 +53,78 @@
     <p><i>We also ask that you view this site in full-screen mode on your browser for an optimal viewing experience. Thank you.</i></p>
     </div>
 
+    <p> </p>
+    
     <h2>Graph 1 - Number of Streams on 10/11/20 in North and South America</h2>
     <p2> This graph visualizes the volume of streams from each country that makes up the total amount of streams from North and South America.
         Deeper shades of green indicate more streams coming from that country, whereas more white countries indicate less streams. A completely white
         country indicates very little to no streams coming from that country.
     </p2>
-    <iframe width="100%" height="1025" frameborder="0"
-  src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=themap&cell=random"></iframe>
+    
+    <div class="graph">
 
+    <div class="styles"></div>
+    <div class="themap"></div>
+    <div class="random"></div>
+    
+    <script type="module" class="graph">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@oliviapapotto/milestone-4-map/2.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "styles") return Inspector.into(".styles")();
+      if (name === "themap") return Inspector.into(".themap")();
+      if (name === "random") return Inspector.into(".random")();
+    });
+    </script>
+    </div>
+
+    <p> </p>
     <h2>Graph 2 - Most Popular Genre on 10/11/20 in North and South America</h2>
     <p2> This graph visualizes the most popular genre of each country, and coloring it based on that genre. "Most popular" was determined
         by taking the genre that was was associated with the most streams out of the countries total streams; in other words, each song
         had its streams added to genre that corresponded with the genre of the song, and the genre with the most streams was declared most popular.
         Countries that are completely white indicate no data supplied from Spotify.
     </p2>
-    <iframe width="100%" height="1000" frameborder="0"
-  src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=themap2&cell=swatchy"></iframe>
+    
 
+    <div class="graph"><div class="styles"></div>
+    <div class="themap2"></div>
+    <div class="swatchy"></div>
+    
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@oliviapapotto/milestone-4-map/2.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "styles") return Inspector.into(".styles")();
+      if (name === "themap2") return Inspector.into(".themap2")();
+      if (name === "swatchy") return Inspector.into(".swatchy")();
+    });
+    </script></div>
+  
+  
+  <p> </p>
     <h2>Graph 3 - Popularity of the Top 5 Genres on 10/11/20 in North and South America</h2>
     <p2> This graph visualizes the volume of streams of each country coming from each genre. The total number of streams for each genre was
         gathered, and then the countries were shaded according to how many streams make up that total. Deeper shades of the genres' color indicate
         more contribution to the genres' total stream count. A completely white country indicates very little to no streams contributing to the
         total stream count for that genre.
     </p2>
-    <iframe width="100%" height="1075" frameborder="0"
-  src="https://observablehq.com/embed/@oliviapapotto/milestone-4-map/2?cell=viewof+r&cell=themap3&cell=rand"></iframe>
-
-
+    
+    <div class="graph"><div class="styles"></div>
+    <div class="viewof-r"></div>
+    <div class="themap3"></div>
+    <div class="rand"></div>
+    
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@oliviapapotto/milestone-4-map/2.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "styles") return Inspector.into(".styles")();
+      if (name === "viewof r") return Inspector.into(".viewof-r")();
+      if (name === "themap3") return Inspector.into(".themap3")();
+      if (name === "rand") return Inspector.into(".rand")();
+    });
+    </script></div>
 
 </body>
 </html>
