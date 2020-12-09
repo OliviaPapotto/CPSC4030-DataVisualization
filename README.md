@@ -13,6 +13,10 @@ A brief description of our files is as follows,
 - Country by Total Streams.xlsx - The countries and their total number of streams on 10/11/20
 - Genre Popularity.xlsx - The popularity of each genre on 10/11/20 
 
+## Video & Report
+Our project report can be found aboved as Project-report.docx.pdf and our video can be found at the following link since it was too big to be put in our repo directly,
+https://drive.google.com/file/d/1crC4C7UwkYPEXs2kkKPBxCRp7IA6FB6P/view?usp=sharing
+
 ## Work Organization
 To divide up our work, Olivia did the html/css coding portion of the website as she has more experience in that area and David worked on the calculations within the dataset getting the derived data we needed from each original file along with refining the code in Observable. Both members worked on creating the visualizations within Observable.
 
