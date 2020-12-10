@@ -21,4 +21,4 @@ https://drive.google.com/file/d/1crC4C7UwkYPEXs2kkKPBxCRp7IA6FB6P/view?usp=shari
 To divide up our work, Olivia did the html/css coding portion of the website as she has more experience in that area and David worked on the calculations within the dataset getting the derived data we needed from each original file along with refining the code in Observable. Both members worked on creating the visualizations within Observable.
 
 ## Sources
-To develop our website with d3 graphs, we modeled our initial graph from the class notes titled "My first map in GeoJSON". Then to get only North and South America, we used https://geojson-maps.ash.ms/ to get obtain a json file of the Americas. Lastly, the music note shortcut icon came from https://findicons.com/icon/80722/music.
+To develop our website with d3 graphs, we modeled our initial graph from the class notes titled "My first map in GeoJSON". Then to get only North and South America, we used https://geojson-maps.ash.ms/ to obtain a json file of the Americas. Lastly, the music note shortcut icon came from https://findicons.com/icon/80722/music.
